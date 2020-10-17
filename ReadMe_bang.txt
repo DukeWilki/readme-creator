@@ -1,1 +1,0 @@
-# bangMy line of text""Hello content!

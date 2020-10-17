@@ -94,11 +94,6 @@ inquirer
     },
     {
       type: "input",
-      message: "How can people contact you with questions?",
-      name: "questions"
-    },
-    {
-      type: "input",
       message: "What is your gitHub username?",
       name: "username",
       validate: function (answer) {
@@ -110,10 +105,41 @@ inquirer
     },
   ])
 
+  async function writer() {
+    try {
+        const { answer } = await inquirer.prompt({
+        });
+    
+        fs.writeFileSync('WriteMe' + answer.title + '.txt', "hello");
+        console.log(answer);
+      
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    
 
 
 
-// .then((answer) => {
+
+    
+
+
+
+
+//   writer();
+
+//   function writer(fileName, data) {
+//     fs.writeFile(fileName, data, err => {
+//         if (err) {
+//           return console.log(err);
+//         }
+      
+//         console.log("created md file")
+//     });
+// }
+//   fs.writeFileSync(answer.title + '_ReadMe_.md', '# ' + answer.title);
+
 //     fs.writeFileSync('ReadMe_'+ answer.title + '.md', '# ' + answer.title + '## Installation' + \ + '<p>' + answer.installation + '</p>');
     // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## Installation <br> <p>' + answer.installation + '</p>', function(err) { if (err) throw err;
     // });
