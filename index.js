@@ -1,13 +1,9 @@
-const fs = require ('fs');
-
-// READ FILE
-// fs.readFile('hello.txt', 'utf-8', function(err, data){
-//     fs.writeFileSync('writeMe.txt', data);
-// });
-
-
+const fs = require("fs");
 const inquirer = require("inquirer");
 
+function capitalize(value) {
+  return value.toUpperCase();
+ }
 
 inquirer
   .prompt([
@@ -17,11 +13,25 @@ inquirer
       name: "title",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("Please enter a title, you can always change it later if you change your mind!");
+          return console.log(
+            "Please enter a title, you can always change it later if you change your mind!"
+          );
         }
         return true;
-    }
-    
+      },
+    },
+    {
+      type: "input",
+      message: "Describe this project:",
+      name: "description",
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log(
+            "Describe your project, you can always change it later if you change your mind!"
+          );
+        }
+        return true;
+      },
     },
     {
       type: "input",
@@ -29,31 +39,31 @@ inquirer
       name: "files",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("Don't know? Enter TBA and fix it up later.");
+          return console.log("Don't know? Enter TBA and fix it up later.");
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
       message: "Are there any instructions on how to install?",
-      name: "installation"
+      name: "installation",
     },
     {
-        type: "input",
-        message: "How do you use your application?",
-        name: "usage",
-        validate: function (answer) {
-          if (answer.length < 1) {
-              return console.log("Don't know? Enter TBA and fix it up later.");
-          }
-          return true;
+      type: "input",
+      message: "How do you use your application?",
+      name: "usage",
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("Don't know? Enter TBA and fix it up later.");
         }
+        return true;
       },
-      {
-        type: "input",
-        message: "Explain the design that you used:",
-        name: "design",
+    },
+    {
+      type: "input",
+      message: "Explain the design that you used:",
+      name: "design",
     },
     {
       type: "list",
@@ -72,13 +82,24 @@ inquirer
         "GNU General Public License v2.0",
         "GNU Lesser General Public License v2.1",
         "Mozilla Public License 2.0",
-        "The Unlicense"
-      ]
+        "The Unlicense",
+      ],
     },
     {
       type: "input",
       message: "How can people contribute to your project",
-      name: "contributing"
+      name: "contributing",
+    },
+    {
+      type: "input",
+      message: "How to test this app?",
+      name: "test",
+      validate: function (answer) {
+        if (answer.length < 1) {
+          return console.log("Don't know? Enter TBA and fix it up later.");
+        }
+        return true;
+      },
     },
     {
       type: "input",
@@ -86,10 +107,10 @@ inquirer
       name: "username",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("Don't know? Enter TBA and fix it up later.");
+          return console.log("Don't know? Enter TBA and fix it up later.");
         }
         return true;
-    }
+      },
     },
     {
       type: "input",
@@ -97,27 +118,31 @@ inquirer
       name: "email",
       validate: function (answer) {
         if (answer.length < 1) {
-            return console.log("Don't know? Enter TBA and fix it up later.");
+          return console.log("Don't know? Enter TBA and fix it up later.");
         }
         return true;
-    }
+      },
     },
   ])
-  .then(function(response) {
+  .then(function (response) {
     console.log(response.title);
     console.log(response.username);
-    fs.writeFileSync('README_ ' +response.title + '.md', (
+    fs.writeFileSync(
+      "README_" + capitalize(response.title).split(' ').join('_') + ".md",
       `# ${response.title}
 ## Files
-This applictaion is mad up of: ${response.files}
+
+This applictaion is made up of: ${response.files}
 
 ## Table of Contents
+* [Description](#description)
 * [Files](#files)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Design](#design)
 * [License](#license)
 * [Contributing](#contributing)
+* [Testing Instructions](#testing instructions)
 * [Questions](#questions)
 
 ## Installation
@@ -135,86 +160,12 @@ ${response.license}
 ## Contributing
 ${response.contributing}
 
-## Tests
-TBA
+## Testing Instructions
+${response.test}
 
 ## Questions
-Conatct me on gitHub ${response.username} or email me at ${response.email} for any questions about ${response.title}
+Conatct me on gitHub at https://github.com/${response.username} or email me at ${response.email} for any questions about ${response.title}
 
-`
-      
-    )
-    );
-  })
-
-  // async function writer() {
-  //   try {
-  //       const { answer } = await inquirer.prompt({
-  //       });
-    
-  //       fs.writeFileSync('WriteMe' + answer.title + '.txt', "hello");
-  //       console.log(answer);
-      
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   }
-    
-
-
-
-
-    
-
-
-
-
-//   writer();
-
-//   function writer(fileName, data) {
-//     fs.writeFile(fileName, data, err => {
-//         if (err) {
-//           return console.log(err);
-//         }
-      
-//         console.log("created md file")
-//     });
-// }
-//   fs.writeFileSync(answer.title + '_ReadMe_.md', '# ' + answer.title);
-
-//     fs.writeFileSync('ReadMe_'+ answer.title + '.md', '# ' + answer.title + '## Installation' + \ + '<p>' + answer.installation + '</p>');
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## Installation <br> <p>' + answer.installation + '</p>', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## Usage', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.usage + '</p>!', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## Design', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.design + '</p>!', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## License', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.license + '</p>!', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## Contributors' , function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.contributors + '</p>', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## FAQ', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.questions + '</p>', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## GitHub User!', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.username + '</p>', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '## Hellocontent!', function(err) { if (err) throw err;
-    // });
-    // fs.appendFile('ReadMe_'+ answer.title + '.txt', '<p>' + answer.installation + '</p>', function(err) { if (err) throw err;
-    //   });
-        // console.log('boom2')
-// });
-
-  // CREATE FILE
-// fs.writeFileSync('WriteMe.txt', "hello");
+` // End of README template literal
+    ); // End of README writer
+  });
