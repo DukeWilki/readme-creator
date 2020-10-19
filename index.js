@@ -128,7 +128,7 @@ inquirer
     console.log(response.title);
     console.log(response.username);
     fs.writeFileSync(
-      "README_" + capitalize(response.title).split(' ').join('_') + ".md",
+      "./Created_ReadMe_Files/README_" + capitalize(response.title).split(' ').join('_') + ".md",
       `# ${response.title}
 ## Files
 
@@ -142,7 +142,7 @@ This applictaion is made up of: ${response.files}
 * [Design](#design)
 * [License](#license)
 * [Contributing](#contributing)
-* [Testing Instructions](#testing instructions)
+* [Testing Instructions](#testing-instructions)
 * [Questions](#questions)
 
 ## Installation

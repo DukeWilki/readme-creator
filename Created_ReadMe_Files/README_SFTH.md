@@ -1,7 +1,7 @@
-# capital
+# sfth
 ## Files
 
-This applictaion is made up of: html only
+This applictaion is made up of: artrjh
 
 ## Table of Contents
 * [Description](#description)
@@ -11,27 +11,27 @@ This applictaion is made up of: html only
 * [Design](#design)
 * [License](#license)
 * [Contributing](#contributing)
-* [Testing Instructions](#testing instructions)
+* [Testing Instructions](#testing-instructions)
 * [Questions](#questions)
 
 ## Installation
-just download the list
+atjhr
 
 ## Usage
-read it
+artjh
 
 ## Design
-none realy, I didn't put any real effort into it
+
 
 ## License
-BSD 2-Clause 'Simplified' License
+GNU General Public License v3.0
 
 ## Contributing
-dont
+tahj
 
 ## Testing Instructions
-nope
+atrjh
 
 ## Questions
-Conatct me on gitHub @harold or email me at harold@email.com for any questions about capital
+Conatct me on gitHub at https://github.com/atrj or email me at srftj for any questions about sfth
 
