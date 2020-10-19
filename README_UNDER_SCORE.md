@@ -11,7 +11,7 @@ This applictaion is made up of: aRFDEg
 * [Design](#design)
 * [License](#license)
 * [Contributing](#contributing)
-* [Testing Instructions](#testing instructions)
+* [Testing Instructions](#testinginstructions)
 * [Questions](#questions)
 
 ## Installation
