@@ -11,7 +11,11 @@ This applictaion is made up of: artrjh
 * [Design](#design)
 * [License](#license)
 * [Contributing](#contributing)
+<<<<<<< HEAD:Created_ReadMe_Files/README_SFTH.md
 * [Testing Instructions](#testing-instructions)
+=======
+* [Testing Instructions](#testinginstructions)
+>>>>>>> c76f7dfea1d6739a3dbc1580cb06c157ecc15929:README_UNDER_SCORE.md
 * [Questions](#questions)
 
 ## Installation
