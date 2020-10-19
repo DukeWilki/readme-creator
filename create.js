@@ -1,33 +1,45 @@
-fs.writeFileSync('WriteMe.txt', 
-'# title'
-'## Contents'
-'* [Files](#files)'
-'* [Installation](#installation)'
-'* [Usage](#usage)'
-'* [Design](#design)'
-'* [License](#license)'
-'* [Contributing](#contributing)'
-'* [Questions](#questions)'
+const fs = require ('fs');
+fs.writeFile('WriteTHIS.txt')
 
-'# Files'
+// fs.appendFile("WriteMe.txt", "# " + answer.title +"\n", function (err) {
+//     if (err) {console.log(err);
+//     } else {console.log("Title added");
+//     }
+// })
 
 
-'# Installation'
+fs.appendFile("WriteTHIS.txt", "# TITLE" + "\n" +
+'## Contents' + "\n" +
+'* [Files](#files)' + "\n" +
+'* [Installation](#installation)' + "\n" +
+'* [Usage](#usage)' + "\n" +
+'* [Design](#design)' + "\n" +
+'* [License](#license)' + "\n" +
+'* [Contributing](#contributing)' + "\n" +
+'* [Questions](#questions)' + "\n" +
+
+'# Files' + "\n" +
 
 
-'# Usage'
+'# Installation' + "\n" +
 
 
-'# Design'
+'# Usage' + "\n" +
 
 
-'# License'
+'# Design' + "\n" +
 
 
-'# Contributing'
+'# License' + "\n" +
 
 
-'# Questions'
+'# Contributing' + "\n" +
 
 
-);
+'# Questions' + "\n", function (err) {
+        if (err) {console.log(err);
+        } else {console.log("Title added");
+        }
+    });
+
+

@@ -8,19 +8,6 @@ const fs = require ('fs');
 
 const inquirer = require("inquirer");
 
-// inquirer
-//   .prompt([
-//     {
-//       name: "user_name",
-//       type: "input",
-//       message: "What is your name?",
-//     },
-//   ])
-//   .then((answer) => {
-//     console.log("Hello " + answer.user_name);
-//   });
-
-
 
 inquirer
   .prompt([
@@ -34,6 +21,7 @@ inquirer
         }
         return true;
     }
+    
     },
     {
       type: "input",
@@ -64,7 +52,7 @@ inquirer
       },
       {
         type: "input",
-        message: "Add your design notes here.",
+        message: "Explain the design that you used:",
         name: "design",
     },
     {
@@ -103,20 +91,74 @@ inquirer
         return true;
     }
     },
-  ])
-
-  async function writer() {
-    try {
-        const { answer } = await inquirer.prompt({
-        });
-    
-        fs.writeFileSync('WriteMe' + answer.title + '.txt', "hello");
-        console.log(answer);
-      
-      } catch (err) {
-        console.log(err);
-      }
+    {
+      type: "input",
+      message: "What is your email address?",
+      name: "email",
+      validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("Don't know? Enter TBA and fix it up later.");
+        }
+        return true;
     }
+    },
+  ])
+  .then(function(response) {
+    console.log(response.title);
+    console.log(response.username);
+    fs.writeFileSync('README_ ' +response.title + '.md', (
+      `# ${response.title}
+## Files
+This applictaion is mad up of: ${response.files}
+
+## Table of Contents
+* [Files](#files)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Design](#design)
+* [License](#license)
+* [Contributing](#contributing)
+* [Questions](#questions)
+
+## Installation
+${response.installation}
+
+## Usage
+${response.usage}
+
+## Design
+${response.design}
+
+## License
+${response.license}
+
+## Contributing
+${response.contributing}
+
+## Tests
+TBA
+
+## Questions
+Conatct me on gitHub ${response.username} or email me at ${response.email} for any questions about ${response.title}
+
+`
+      
+    )
+    );
+  })
+
+  // async function writer() {
+  //   try {
+  //       const { answer } = await inquirer.prompt({
+  //       });
+    
+  //       fs.writeFileSync('WriteMe' + answer.title + '.txt', "hello");
+  //       console.log(answer);
+      
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   }
     
 
 

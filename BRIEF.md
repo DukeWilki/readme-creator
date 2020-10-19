@@ -37,7 +37,7 @@ THEN a quality, professional README.md is generated with the
  - Questions
 
 WHEN I enter my project title
-THEN this is displayed as the title of the README
+THEN this is displayed as the title of the README - done
 
 WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
 THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
