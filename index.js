@@ -130,9 +130,8 @@ inquirer
     fs.writeFileSync(
       "./Created_ReadMe_Files/README_" + capitalize(response.title).split(' ').join('_') + ".md",
       `# ${response.title}
-## Files
 
-This applictaion is made up of: ${response.files}
+[![License](https://img.shields.io/badge/License-${response.license}-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Table of Contents
 * [Description](#description)
@@ -144,6 +143,14 @@ This applictaion is made up of: ${response.files}
 * [Contributing](#contributing)
 * [Testing Instructions](#testing-instructions)
 * [Questions](#questions)
+
+## Description
+
+${response.description}
+
+## Files
+
+This applictaion is made up of: ${response.files}
 
 ## Installation
 ${response.installation}
