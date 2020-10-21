@@ -24,17 +24,22 @@ This applictaion is made up of: The main file that creates the ReadMe is index.j
 This app can be used in bash termanals.
 
 ## Usage
-Open the integrated terminal in this directory and start the process by typing "node index" in the bash.
+Open the integrated terminal in this directory and start the process by typing "node index" in the bash. User will then be prompted with a series of questions about the application to create a new ReadMe file.
+
+![Screenshot 1](https://github.com/DukeWilki/readme-creator/blob/master/img/ui.JPG)
+
 
 ## Design
 This is designed with functionality in mind. The ReadMe file uses the standard markdown format using headings as well as anchor links to make sections easy to access. When feilds are mandatory, error messages are written in human-speak to add some friendliness to teh process. The licence badge has been created to use a random colour from an array to make ReadMe file format a bit more aesthetic. ReadMe files are created in a seperate folder so that they are easy to find, rather than have all the code etc in amongst ReadMe files.
 
+![Screenshot 2](https://github.com/DukeWilki/readme-creator/blob/master/img/ReadMe%20folder.JPG)
+
 ## Demo
 ReadMe Creator Demo - using the creator
-[https://drive.google.com/file/d/1qQiSu7mk6FAkwbF4zgV-udYrfS59w1Wb/view]
+https://drive.google.com/file/d/1qQiSu7mk6FAkwbF4zgV-udYrfS59w1Wb/view
 
 ReadMe Creator Demo - verifiction
-[https://drive.google.com/file/d/1W2ovtBhizrqe8BYIkPM3brCym1MB4AAZ/view]
+https://drive.google.com/file/d/1W2ovtBhizrqe8BYIkPM3brCym1MB4AAZ/view
 
 ## License
 This application has MIT License applied.
