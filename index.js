@@ -1,11 +1,12 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const hello = "hello"
 
-function capitalize(value) {
+// Capitalisation function to draw attention to readme filename
+function capitalise(value) {
   return value.toUpperCase();
  }
 
+// Array to put colour in licence badge
  var colours = [
   "brightgreen",
   "green",
@@ -19,43 +20,9 @@ function capitalize(value) {
   "ff69b4",
   "9cf"
 ];
-
  var colour = colours[Math.floor(Math.random()*colours.length)];
 
-
-// getlicence function - to rephrase licenses
-// if else to rewrite licence in right format
-
-// function getlicence() {
-//   if (response.license === "Apache License 2.0" ){
-//     // return "apache";
-//     console.log("apache");
-//   }
-// }
-
-
-// OR
-
-// Dcitionary
-// var dictionary = {
-// "Apache License 2.0" : "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-// "GNU General Public License v3.0" : "",
-// "MIT License" : "",
-// "BSD 2-Clause 'Simplified' License" : "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)",
-// "BSD 3-Clause 'New' or 'Revised' License" : "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
-// "Boost Software License 1.0" : "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)",
-// "Creative Commons Zero v1.0 Universal" : "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)"
-// "Eclipse Public License 2.0" : "",
-// "GNU Affero General Public License v3.0" : "",
-// "GNU General Public License v2.0" : "",
-// "GNU Lesser General Public License v2.1" : "",
-// "Mozilla Public License 2.0" : "",
-// "The Unlicense" : "",
-// }
-
-
-
-
+// Questions being asked via inquirer
 inquirer
   .prompt([
     {
@@ -137,9 +104,15 @@ inquirer
       ],
     },
     {
-      type: "input",
+      type: "list",
       message: "How can people contribute to your project",
       name: "contributing",
+      choices: [
+        "Please don't make any contributions right now.",
+        "Please contact me before making any contributions.",
+        "Please contact me before making any major contributions.",
+        "This application is open for your contributions.",
+      ],
     },
     {
       type: "input",
@@ -176,20 +149,14 @@ inquirer
     },
   ])
   .then(function (response) {
-    // if (response.license === "Apache License 2.0"){
-    //   $getLicence = "Apache";
-    // } else if (response.license === "GNU General Public License v3.0"){
-    //   $getLicence = "GNU";
-    // }
-    // console.log(getLicence);
-    console.log(response.title);
-    console.log(response.username);
-    console.log("The license badge reads of the licence file in your repo. If you don't have one yet, it will simnply read 'license not specified'. This will update when you create your licence file")
-    fs.writeFileSync(
-      "./Created_ReadMe_Files/README_" + capitalize(response.title).split(' ').join('_') + ".md",
+    console.log("Your README file will be created in the 'Created_ReadMe_Files' folder")
+    console.log("Don't forget to create your licence file in GitHub!")
+    fs.writeFileSync(   
+      "./Created_ReadMe_Files/README_" + capitalise(response.title).split(' ').join('_') + ".md", // Empty README file created
+      // Start of README template literal to populate data
       `# ${response.title}
 
-<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-${colour}">
+<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-${colour}"> //test
 
 
 ## Table of Contents
@@ -199,7 +166,7 @@ inquirer
 * [Usage](#usage)
 * [Design](#design)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contributing Guidelines](#contributing-guidelines)
 * [Testing Instructions](#testing-instructions)
 * [Questions](#questions)
 
@@ -221,16 +188,22 @@ ${response.usage}
 ${response.design}
 
 ## License
-${response.license}
+This application has ${response.license} applied.
 
-## Contributing
+## Contributing Guidelines
 ${response.contributing}
+
+If can contribute to this project, please follow these simple rules:
+* Write bug reports with detail, background, and sample code
+* Make sure commits have appropriate 
+* All changes are covered under ${response.license} applied to this appliction
+* Please respect the authors request if they do not want contributions on this project. 
 
 ## Testing Instructions
 ${response.test}
 
 ## Questions
-Conatct me on gitHub at https://github.com/${response.username} or email me at ${response.email} for any questions about ${response.title}
+Conatct me on gitHub at https://github.com/${response.username} or email me at ${response.email} for any questions about ${response.title}.
 
 ` // End of README template literal
     ); // End of README writer
