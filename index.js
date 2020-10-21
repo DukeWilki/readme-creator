@@ -170,11 +170,9 @@ inquirer
 * [Questions](#questions)
 
 ## Description
-
 ${response.description}
 
 ## Files
-
 This applictaion is made up of: ${response.files}
 
 ## Installation
