@@ -1,6 +1,6 @@
-# Zero
+# Revised
 
-<img src="https://img.shields.io/badge/Licence-Creative%20Commons%20Zero%20v1.0%20Universal-blue">
+<img src="https://img.shields.io/badge/Licence-BSD%203%20(Revised)-blue">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Zero
+Revised
 
 ## Files
 
-This applictaion is made up of: Zero
+This applictaion is made up of: Revised
 
 ## Installation
-Zero
+Revised
 
 ## Usage
-Zero
+Revised
 
 ## Design
-Zero
+Revised
 
 ## License
-Creative Commons Zero v1.0 Universal
+BSD 3 (Revised)
 
 ## Contributing
-Zero
+Revised
 
 ## Testing Instructions
-Zero
+Revised
 
 ## Questions
-Conatct me on gitHub at https://github.com/Zero or email me at Zero for any questions about Zero
+Conatct me on gitHub at https://github.com/Revised or email me at Revised for any questions about Revised
 

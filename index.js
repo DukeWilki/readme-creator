@@ -6,12 +6,21 @@ function capitalize(value) {
   return value.toUpperCase();
  }
 
- var myArray = [
-  "Apples",
-  "Pears"
+ var colours = [
+  "brightgreen",
+  "green",
+  "yellowgreen",
+  "yellow",
+  "orange",
+  "red",
+  "blue",
+  "lightgrey",
+  "blueviolet",
+  "ff69b4",
+  "9cf"
 ];
 
- var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+ var colour = colours[Math.floor(Math.random()*colours.length)];
 
 
 // getlicence function - to rephrase licenses
@@ -112,17 +121,17 @@ inquirer
       message: "What sort of license is applied to your application?",
       name: "license",
       choices: [
-        "Apache License 2.0",
-        "GNU General Public License v3.0",
-        "MIT License",
-        "BSD 2-Clause 'Simplified' License",
-        "BSD 3-Clause 'New' or 'Revised' License",
-        "Boost Software License 1.0",
-        "Creative Commons Zero v1.0 Universal",
+        "Apache 2.0",
+        "Boost 1.0",
+        "BSD 2 (Simplified)",
+        "BSD 3 (Revised)",
+        "Creative Commons Zero 1.0 Universal",
         "Eclipse Public License 2.0",
-        "GNU Affero General Public License v3.0",
-        "GNU General Public License v2.0",
-        "GNU Lesser General Public License v2.1",
+        "GNU General Public License 3.0",
+        "GNU Affero General Public License 3.0",
+        "GNU General Public License 2.0",
+        "GNU Lesser General Public License 2.1",
+        "MIT License",
         "Mozilla Public License 2.0",
         "The Unlicense",
       ],
@@ -180,7 +189,7 @@ inquirer
       "./Created_ReadMe_Files/README_" + capitalize(response.title).split(' ').join('_') + ".md",
       `# ${response.title}
 
-<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-blue">
+<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-${colour}">
 
 
 ## Table of Contents

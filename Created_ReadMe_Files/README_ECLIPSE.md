@@ -1,6 +1,6 @@
-# Mozilla
+# Eclipse
 
-<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-brightgreen">
+<img src="https://img.shields.io/badge/Licence-Eclipse%20Public%20License%202.0-9cf">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Mozilla
+Eclipse
 
 ## Files
 
-This applictaion is made up of: Mozilla
+This applictaion is made up of: Eclipse
 
 ## Installation
-Mozilla
+Eclipse
 
 ## Usage
-Mozilla
+Eclipse
 
 ## Design
-Mozilla
+Eclipse
 
 ## License
-Mozilla Public License 2.0
+Eclipse Public License 2.0
 
 ## Contributing
-Mozilla
+Eclipse
 
 ## Testing Instructions
-Mozilla
+Eclipse
 
 ## Questions
-Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
+Conatct me on gitHub at https://github.com/Eclipse or email me at Eclipse for any questions about Eclipse
 

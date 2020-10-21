@@ -1,6 +1,6 @@
-# Mozilla
+# Unlicense
 
-<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-brightgreen">
+<img src="https://img.shields.io/badge/Licence-The%20Unlicense-brightgreen">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Mozilla
+Unlicense
 
 ## Files
 
-This applictaion is made up of: Mozilla
+This applictaion is made up of: Unlicense
 
 ## Installation
-Mozilla
+Unlicense
 
 ## Usage
-Mozilla
+Unlicense
 
 ## Design
-Mozilla
+Unlicense
 
 ## License
-Mozilla Public License 2.0
+The Unlicense
 
 ## Contributing
-Mozilla
+Unlicense
 
 ## Testing Instructions
-Mozilla
+Unlicense
 
 ## Questions
-Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
+Conatct me on gitHub at https://github.com/Unlicense or email me at Unlicense for any questions about Unlicense
 

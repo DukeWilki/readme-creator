@@ -1,6 +1,6 @@
-# unlicence
+# Creative
 
-<img src="https://img.shields.io/badge/Licence-The%20Unlicense-blue">
+<img src="https://img.shields.io/badge/Licence-Creative%20Commons%20Zero%201.0%20Universal-blue">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-a
+Creative
 
 ## Files
 
-This applictaion is made up of: a
+This applictaion is made up of: Creative
 
 ## Installation
-a
+Creative
 
 ## Usage
-a
+Creative
 
 ## Design
-a
+Creative
 
 ## License
-The Unlicense
+Creative Commons Zero 1.0 Universal
 
 ## Contributing
-a
+Creative
 
 ## Testing Instructions
-a
+Creative
 
 ## Questions
-Conatct me on gitHub at https://github.com/a or email me at a for any questions about unlicence
+Conatct me on gitHub at https://github.com/Creative or email me at Creative for any questions about Creative
 

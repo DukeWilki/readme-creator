@@ -1,6 +1,6 @@
-# Mozilla
+# Boost
 
-<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-brightgreen">
+<img src="https://img.shields.io/badge/Licence-Boost%20Software%201.0-brightgreen">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Mozilla
+Boost
 
 ## Files
 
-This applictaion is made up of: Mozilla
+This applictaion is made up of: Boost
 
 ## Installation
-Mozilla
+Boost
 
 ## Usage
-Mozilla
+Boost
 
 ## Design
-Mozilla
+Boost
 
 ## License
-Mozilla Public License 2.0
+Boost Software 1.0
 
 ## Contributing
-Mozilla
+Boost
 
 ## Testing Instructions
-Mozilla
+Boost
 
 ## Questions
-Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
+Conatct me on gitHub at https://github.com/Boost or email me at Boost for any questions about Boost
 

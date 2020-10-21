@@ -1,6 +1,6 @@
-# Mozilla
+# MIT
 
-<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-brightgreen">
+<img src="https://img.shields.io/badge/Licence-MIT%20License-9cf">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Mozilla
+MIT
 
 ## Files
 
-This applictaion is made up of: Mozilla
+This applictaion is made up of: MIT
 
 ## Installation
-Mozilla
+MIT
 
 ## Usage
-Mozilla
+MIT
 
 ## Design
-Mozilla
+MIT
 
 ## License
-Mozilla Public License 2.0
+MIT License
 
 ## Contributing
-Mozilla
+MIT
 
 ## Testing Instructions
-Mozilla
+MIT
 
 ## Questions
-Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
+Conatct me on gitHub at https://github.com/MIT or email me at MIT for any questions about MIT
 

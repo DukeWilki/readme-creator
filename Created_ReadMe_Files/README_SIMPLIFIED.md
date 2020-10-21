@@ -1,6 +1,6 @@
-# Mozilla
+# Simplified
 
-<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-brightgreen">
+<img src="https://img.shields.io/badge/Licence-BSD%202%20(Simplified)-orange">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Mozilla
+Simplified
 
 ## Files
 
-This applictaion is made up of: Mozilla
+This applictaion is made up of: Simplified
 
 ## Installation
-Mozilla
+Simplified
 
 ## Usage
-Mozilla
+Simplified
 
 ## Design
-Mozilla
+Simplified
 
 ## License
-Mozilla Public License 2.0
+BSD 2 (Simplified)
 
 ## Contributing
-Mozilla
+Simplified
 
 ## Testing Instructions
-Mozilla
+Simplified
 
 ## Questions
-Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
+Conatct me on gitHub at https://github.com/Simplified or email me at Simplified for any questions about Simplified
 

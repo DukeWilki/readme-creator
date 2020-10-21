@@ -1,6 +1,6 @@
-# Mozilla
+# Apache
 
-<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-brightgreen">
+<img src="https://img.shields.io/badge/Licence-Apache%202.0-lightgrey">
 
 
 ## Table of Contents
@@ -16,30 +16,30 @@
 
 ## Description
 
-Mozilla
+Apache
 
 ## Files
 
-This applictaion is made up of: Mozilla
+This applictaion is made up of: Apache
 
 ## Installation
-Mozilla
+Apache
 
 ## Usage
-Mozilla
+Apache
 
 ## Design
-Mozilla
+Apache
 
 ## License
-Mozilla Public License 2.0
+Apache 2.0
 
 ## Contributing
-Mozilla
+Apache
 
 ## Testing Instructions
-Mozilla
+Apache
 
 ## Questions
-Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
+Conatct me on gitHub at https://github.com/Apache or email me at Apache for any questions about Apache
 
