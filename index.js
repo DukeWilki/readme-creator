@@ -175,15 +175,13 @@ inquirer
     // console.log(getLicence);
     console.log(response.title);
     console.log(response.username);
-    console.log(randomItem)
+    console.log("The license badge reads of the licence file in your repo. If you don't have one yet, it will simnply read 'license not specified'. This will update when you create your licence file")
     fs.writeFileSync(
       "./Created_ReadMe_Files/README_" + capitalize(response.title).split(' ').join('_') + ".md",
       `# ${response.title}
 
-[![License]${hello}-blue.svg)]
-${randomItem['Apples'] ? 'Apache!' : 'other!'}
+<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-blue">
 
-https://img.shields.io/github/license/dukewilki/weather-buddy
 
 ## Table of Contents
 * [Description](#description)

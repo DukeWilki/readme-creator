@@ -1,9 +1,7 @@
-# E
+# Mozilla
 
-https://img.shields.io/github/license/dukewilki/weather-buddy
+<img src="https://img.shields.io/badge/Licence-Mozilla%20Public%20License%202.0-blue">
 
-[![License]hello-blue.svg)]
-other!
 
 ## Table of Contents
 * [Description](#description)
@@ -18,30 +16,30 @@ other!
 
 ## Description
 
-E
+Mozilla
 
 ## Files
 
-This applictaion is made up of: E
+This applictaion is made up of: Mozilla
 
 ## Installation
-E
+Mozilla
 
 ## Usage
-E
+Mozilla
 
 ## Design
-E
+Mozilla
 
 ## License
-Apache License 2.0
+Mozilla Public License 2.0
 
 ## Contributing
-E
+Mozilla
 
 ## Testing Instructions
-E
+Mozilla
 
 ## Questions
-Conatct me on gitHub at https://github.com/E or email me at E for any questions about E
+Conatct me on gitHub at https://github.com/Mozilla or email me at Mozilla for any questions about Mozilla
 
