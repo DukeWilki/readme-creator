@@ -1,6 +1,9 @@
-# TEST
+# E
 
-[![License](https://img.shields.io/badge/License-Apache License 2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+https://img.shields.io/github/license/dukewilki/weather-buddy
+
+[![License]hello-blue.svg)]
+other!
 
 ## Table of Contents
 * [Description](#description)
@@ -15,30 +18,30 @@
 
 ## Description
 
-IT HAS A BADGE
+E
 
 ## Files
 
-This applictaion is made up of: YES
+This applictaion is made up of: E
 
 ## Installation
-SDGVF
+E
 
 ## Usage
-ASDEF
+E
 
 ## Design
-DRFAG
+E
 
 ## License
 Apache License 2.0
 
 ## Contributing
-RGSFDRG
+E
 
 ## Testing Instructions
-ASRDGF
+E
 
 ## Questions
-Conatct me on gitHub at https://github.com/SRGD or email me at SERDWG for any questions about TEST
+Conatct me on gitHub at https://github.com/E or email me at E for any questions about E
 

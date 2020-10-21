@@ -1,9 +1,51 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const hello = "hello"
 
 function capitalize(value) {
   return value.toUpperCase();
  }
+
+ var myArray = [
+  "Apples",
+  "Pears"
+];
+
+ var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+
+// getlicence function - to rephrase licenses
+// if else to rewrite licence in right format
+
+// function getlicence() {
+//   if (response.license === "Apache License 2.0" ){
+//     // return "apache";
+//     console.log("apache");
+//   }
+// }
+
+
+// OR
+
+// Dcitionary
+// var dictionary = {
+// "Apache License 2.0" : "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+// "GNU General Public License v3.0" : "",
+// "MIT License" : "",
+// "BSD 2-Clause 'Simplified' License" : "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)",
+// "BSD 3-Clause 'New' or 'Revised' License" : "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
+// "Boost Software License 1.0" : "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)",
+// "Creative Commons Zero v1.0 Universal" : "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)"
+// "Eclipse Public License 2.0" : "",
+// "GNU Affero General Public License v3.0" : "",
+// "GNU General Public License v2.0" : "",
+// "GNU Lesser General Public License v2.1" : "",
+// "Mozilla Public License 2.0" : "",
+// "The Unlicense" : "",
+// }
+
+
+
 
 inquirer
   .prompt([
@@ -125,13 +167,23 @@ inquirer
     },
   ])
   .then(function (response) {
+    // if (response.license === "Apache License 2.0"){
+    //   $getLicence = "Apache";
+    // } else if (response.license === "GNU General Public License v3.0"){
+    //   $getLicence = "GNU";
+    // }
+    // console.log(getLicence);
     console.log(response.title);
     console.log(response.username);
+    console.log(randomItem)
     fs.writeFileSync(
       "./Created_ReadMe_Files/README_" + capitalize(response.title).split(' ').join('_') + ".md",
       `# ${response.title}
 
-[![License](https://img.shields.io/badge/License-${response.license}-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License]${hello}-blue.svg)]
+${randomItem['Apples'] ? 'Apache!' : 'other!'}
+
+https://img.shields.io/github/license/dukewilki/weather-buddy
 
 ## Table of Contents
 * [Description](#description)
