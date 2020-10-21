@@ -156,8 +156,7 @@ inquirer
       // Start of README template literal to populate data
       `# ${response.title}
 
-<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-${colour}"> //test
-
+<img src="https://img.shields.io/badge/Licence-${(response.license).split(' ').join('%20')}-${colour}">
 
 ## Table of Contents
 * [Description](#description)
